@@ -1,9 +1,11 @@
-const logJSON = (type, message) => {
-  console.log({
+const elevenLogJSON = (type, message) => {
+  console.log(JSON.stringify({
     time:new Date().toISOString(),
     type:type.toUpperCase(),
-    message:message
-  });
+    msg:message
+  }));
 }
 
-module.exports = {logJSON};
+module.exports = {
+  elevenLogJSON
+};
