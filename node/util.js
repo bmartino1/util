@@ -1,5 +1,5 @@
 const elevenLogJSON = (type, message) => {
-  if((/debug/i.test(type) && process.env?.DEBUG) || true){
+  if(process.env?.DEBUG || (!process.env?.DEBUG && !/debug/i.test(type))){
     console.log(JSON.stringify({
       time:new Date().toISOString(),
       type:type.toUpperCase(),
