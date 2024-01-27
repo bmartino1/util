@@ -2,5 +2,5 @@
   LOG_JSON_DATE=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
   LOG_JSON_TYPE=$(echo "${1}" | awk 'BEGIN { getline; print toupper($0) }')
   if [ ! -z ${DEBUG} ] || { [ -z ${DEBUG} ] && [ "${LOG_JSON_TYPE}" != "DEBUG" ]; }; then
-    echo "{\"time\":\"${LOG_JSON_DATE}\", \"type\":\"${LOG_JSON_TYPE}\", \"msg\":\"${2}\"}"
+    echo "{\"time\":\"${LOG_JSON_DATE}\",\"type\":\"${LOG_JSON_TYPE}\",\"msg\":\"${2}\"}"
   fi
