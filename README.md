@@ -1,3 +1,5 @@
+#TESTING ONLY FOR UNFI DOCKER Project.
+
 # Util
 A collection of usefulness.
 
@@ -23,3 +25,7 @@ This repository contains useful tools for all sorts of things and manners that s
   elevenLogJSON('debug', `this is a debug message that's only displayed if DEBUG is set`);
   $ {"time":"2024-01-04T08:12:39.000Z", "type":"DEBUG", "msg":"this is a debug message that's only displayed if DEBUG is se"}
 ```
+
+#Disclaimer:
+Thanks To 11 notes and PeteAsking! code cehck and inspectiong for testing fork/branch:
+https://github.com/11notes/
